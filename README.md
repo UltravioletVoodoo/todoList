@@ -3,11 +3,11 @@ A simple todo list implemented in python. The goal of this project was to become
 
 ##### Sample commands
 ```
-print
-add string
-add string index
-pop
-pop index
-clear/cls
-exit/q
+[HELPER]> print
+[HELPER]> add string
+[HELPER]> add string index
+[HELPER]> pop
+[HELPER]> pop index
+[HELPER]> clear/cls
+[HELPER]> exit/q
 ```
