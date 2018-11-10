@@ -14,8 +14,10 @@ class tasks:
 		if (len(self.taskList) == 0):
 			print("No tasks to pop")
 		else:
-			self.taskList.pop()
+			self.taskList.pop(0)
 			self.taskIndex = self.taskIndex - 1
+			for x in self.taskList:
+				x.index = x.index - 1
 		
 	def addStep(self, index, name):
 		if (self.taskList[int(index) - 1] is not None):

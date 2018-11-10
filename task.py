@@ -16,8 +16,10 @@ class task:
 		if (len(self.steps) == 0):
 			print(self.name + " has no steps to pop")
 		else:
-			self.steps.pop()
+			self.steps.pop(0)
 			self.stepIndex = self.stepIndex - 1
+			for x in self.steps:
+				x.index = x.index - 1
 			
 	def printTask(self):
 		print(str(self.index) + ". " + self.name)
